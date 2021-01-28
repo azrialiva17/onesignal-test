@@ -7,6 +7,16 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async="" />
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <script>
+          {window.OneSignal = window.OneSignal || []}
+          {OneSignal.push(function() {
+            OneSignal.init({
+              appId: "12ba84af-3f1e-4805-ae2c-6a454a2ee412",
+            })
+          })}
+        </script>
       </Head>
 
       <main className={styles.main}>
