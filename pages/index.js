@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import script from './script.js'
+import script from './static/script.js'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async="" />
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-        <script src="./script.js" />
+        <script type="text/javascript" src="../static/script.js" />
       </Head>
 
       <main className={styles.main}>
