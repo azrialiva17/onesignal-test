@@ -1,15 +1,23 @@
 import Head from 'next/head'
+import { useEffect } from "react";
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  useEffect(() => {
+    const OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+        OneSignal.init({
+            appId: "12ba84af-3f1e-4805-ae2c-6a454a2ee412",
+        });
+    });
+  });
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async="" />
-        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-        <script type="text/javascript"src="../public/script.js" />
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async="" />
       </Head>
 
       <main className={styles.main}>
