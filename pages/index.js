@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async="" />
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-        <script>{script.oneSignal()}</script>
+        <script src="./script.js" />
       </Head>
 
       <main className={styles.main}>
